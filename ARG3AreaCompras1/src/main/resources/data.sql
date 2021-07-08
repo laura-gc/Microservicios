@@ -1,2 +1,5 @@
-INSERT INTO empleado (id_empleado, correo, direccion, doc_identidad, fecha_registro, nombres, telefono) VALUES(1,'Caro@gmail.com','Av.sol','12349999','2021-02-02','Carolina','79966547')
-
+INSERT INTO empleados (id_empleado, correo, direccion, doc_identidad, fecha_registro, nombres, telefono) VALUES(1,'Caro@gmail.com','Av.sol','12349999','2021-02-02','Carolina','79966547')
+INSERT INTO productos (id_producto, nombre, precio, stock) VALUES(1,'leche',3.2,16)
+INSERT INTO proveedores (id_proveedor, correo, direccion, fecha_registro, razon_social, ruc, telefono)VALUES(1,'Alejandro@gmail.com','Av.sol','2021-02-02','soltero','2025854','852365478')
+INSERT INTO ordencompra (id_orden_compra, descripcion, fecha_compra, id_empleado, id_proveedor) VALUES(1,'','2021-02-02',1,1)
+INSERT INTO detalleordencompra (id_detalle_orden_compra, cantidad, precio, id_orden_compra, id_producto) VALUES(1,5,3.2,1,1)
